@@ -1,0 +1,51 @@
+
+.wrapper{
+    
+    position: relative;
+    display: inline-block;
+    
+}
+.name{
+    margin-top: 50px;
+    display: inline-block;
+    
+}
+
+.name::before{
+    content: '';
+    height: 0px;
+    width: 2px;
+    color: red;
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: brown;
+    transition: all 0.2s;
+    opacity: 0;
+}
+.name:hover::before{
+    cursor: pointer;
+    height: 35px;
+    width: 2px;
+    opacity: 1;
+}
+.name::after{
+    content: '';
+    height: 0px;
+    width: 2px;
+    color: red;
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: brown;
+    transition: all 0.2s;
+    opacity: 0;
+}
+.name:hover::after{
+    cursor: pointer;
+    height: 35px;
+    width: 2px;
+    opacity: 1;
+}
