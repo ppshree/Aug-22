@@ -32,7 +32,6 @@
 }
 .name::after{
     content: '';
-    height: 0px;
     width: 2px;
     color: red;
     position: absolute;
